@@ -55,6 +55,45 @@ Modules - reusable parts of our design
   display: table;
   clear: both;
 }
+.head-img {
+  margin: auto;
+  display: block;
+  width: 500px;
+  margin-bottom: 12px;
+  box-shadow: 12px 12px 10px #fababa;
+}
+.header-container {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  display: block;
+  margin: auto;
+  width: 530px;
+  text-align: right;
+}
+.italic {
+  font-style: italic;
+}
+.head {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+.ender {
+  margin-top: 5em;
+  position: absolute;
+}
+
+.ender-img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  box-shadow: 10px 10px 10px #bbb;
+}
+.spacer {
+  height: 40px;
+}
 
 /* -------------------------------- 
 
@@ -63,20 +102,20 @@ Main components
 -------------------------------- */
 header {
   height: auto;
-  line-height: 200px;
+  /*line-height: /*200px*/;*/
   text-align: center;
-  background: red;
+  /*background: #ffeeee;*/
 }
 header h1 {
-  color: white;
-  font-size: 18px;
+  color: #223322;
+  font-size: 48px;
   font-size: 1.125rem;
   /*z-index: -5000;*/
 }
 .description {
-  color: #fefefe;
+  color: #223322;
   font-family: 'Open Sans';
-  line-height: 1em;
+  line-height: 1.5em;
   margin: 4em;
   padding: 4em;
   /*margin-right:4em;*/
@@ -84,10 +123,11 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   header {
     height: auto;
-    line-height: 300px;
+    /*line-height: 300px;*/
   }
   header h1 {
-    font-size: 24px;
+    text-align: center;
+    font-size: 48px;
     font-size: 1.5rem;
   }
 }

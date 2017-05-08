@@ -10,13 +10,15 @@
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="https://use.fontawesome.com/41197692d2.js"></script>
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Conceptualizing The Netflix Stream</title>
+	<title>The Netflix Stream: A Conceptual Model</title>
 </head>
 <body>
 	<header>
-		<h1>Conceptual Model of a Netflix Stream</h1>
-		<div class="description">This model seeks to map a supply chain of your nightly habit, an hour of Netflix before bed. The vertical bar below represents a spatial timeline, tracing the spatial journey of tonight's episode from its origins as a video file to its final destination in your browser. Nodes along the vertical axis are timestamped to illustrate how the stream's supply chain exists in the time before and after you hit 'Play Now.'</div>
+		<div class="header-container"><img src="img/header.png" align="center" class="head-img"></br>
+		<span class="italic">Wired</span> magazine headline, 2002.
+		</div>
+		<div class="head">The Netflix Stream: A Conceptual Model</div>
+		<div class="description">This model seeks to map out an infrastructural 'supply chain' of your nightly habit, an hour of Netflix before bed. It is based upon a hypothetical event: you, in bed at 11:30, watching an hour of Netflix on your laptop. The vertical bar below represents a spatial timeline, tracing the journey of tonight's episode from its origins as a video file to its final destination in your browser. Nodes along the spatial axis are timestamped to illustrate how the stream's supply chain exists in the time before and after you hit 'Play Now.'</div>
 	</header>
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
@@ -106,6 +108,26 @@
 				<span class="cd-date">2AM-12:00PM</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
+		<div class="cd-container ender">
+			<div class="description">
+				<h1>Putting the model into practice</h1>
+				<p>On May 7th at 11:30PM I engaged with this model by streaming an hour of Netflix from my bedroom in New York City. I ran a packet tracing program as I streamed, monitoring the data coming onto my Macbook Pro's WiFi interface using Wireshark.</p>
+				<div class="spacer"></div>
+				<img src="img/trace.png">
+				<div class="spacer"></div>
+				As the Netflix homepage loaded into my browser, I observed the IP addresses that were appearing on my wireless packet trace. 107.23.88.105 was the most common address I saw, so I used an IP geolocation database to get some more information on this machine.<div class="spacer"></div>
+				<img class="ender-img" src="img/amazon.png" style="width: 400px">
+				<div class="spacer"></div>
+				<p>This address was in a Virginia data center, owned by Amazon. This is what I expected to find, as I learned in my research for this project that Netflix hosts all of their backend operations on Amazon's public cloud, i.e. everything that happens up until the user hits play. This is the machine where my recommendations were being calculated and served from.</p>
+				I eventually settled on an episode, a relatively new Netflix original titled <span class="italic">Old Baby</span> which appeared under the homepage's "Trending" section. As the stream began, the output on my wireless trace immediately filled with packets from a new address, 23.246.7.157.</p>
+				<div class="spacer"></div>
+				<img class="ender-img" src="img/oca.png">
+				<div class="spacer"></div>
+				This machine is almost certainly an OCA positioned at some network exchange site in Wilmington, Delaware. This location is fairly closer to NYC than Virginia, illustrating the Open Connect network's forward positioning strategy. To put the latency benefits of this positioning into perspective, I ran an experiment with a cloud server I have access to in Amazon's Oregon location. I streamed a 720p video from this Oregon server (my experimental OCA) and found that it only took 40ms for each frame to reach my computer. I used the UNIX 'ping' command to measure the network latency between me and my OCA, 23.246.7.157. The average ping round trip time was around 50ms, indicating approximately 25ms for the one-way trip my streamed video frames were making.<div class="spacer"></div>
+				The Wilmington OCA's speed improvement is rather insignificant or inconsequential from my individual perspective, but the fact that it comes as a billion-dollar investment shines light on the sheer scale that Netflix engineers are considering.
+				</br>
+			</div>
+		</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
