@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800i|Roboto:400,400i" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -18,13 +19,13 @@
 		<span class="italic">Wired</span> magazine headline, 2002.
 		</div>
 		<div class="head">The Netflix Stream: A Conceptual Model</div>
-		<div class="description">This model seeks to map out an infrastructural 'supply chain' of your nightly habit, an hour of Netflix before bed. It is based upon a hypothetical event: you, in bed at 11:30, watching an hour of Netflix on your laptop. The vertical bar below represents a spatial timeline, tracing the journey of tonight's episode from its origins as a video file to its final destination in your browser. Nodes along the spatial axis are timestamped to illustrate how the stream's supply chain exists in the time before and after you hit 'Play Now.'</div>
+		<div class="description">This model seeks to map out an infrastructural 'supply chain' of your nightly habit, an hour of Netflix before bed. It is based upon a hypothetical event: you, in bed at 11:30, watching an hour of Netflix on your laptop. Tonight, it's the first episode of a new Netflix Original that came out today, and you've decided to give it a go. The timeline below pertains to the events surrounding this specific episode, understood as a digital file travelling over the Internet.</br></br>The vertical bar below represents a spatial timeline, tracing the journey of tonight's episode from its origins as a video file to its final destination in your browser. Nodes along the spatial axis are timestamped to illustrate how this specific stream's supply chain exists temporally before and after you click 'Play Now.'</div>
 	</header>
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
+			<div class="cd-timeline-img cd-movie">
 				<!-- <i class="fa fa-wifi" aria-hidden="true"></i> -->
-				<img src="img/cd-icon-picture.svg" alt="Picture">
+				<img src="img/cd-icon-location.svg" alt="Picture">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
@@ -32,13 +33,13 @@
 				<p>Your MacBook or iPad or SmartTV. Data packets are decoded at the wireless interface. Software within your browser is rendering these into video and audio.</p>
 				<img src="img/laptop.jpg" alt="Picture">
 				<!-- <a href="#0">Read more</a> -->
-				<span class="cd-date">11:30PM-12:30AM</span>
+				<span class="cd-date">11:30PM-12:30AM (now)</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
+				<img src="img/cd-icon-location.svg" alt="Movie">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
@@ -47,71 +48,71 @@
 				<img src="img/wireless.jpg" alt="Picture">
 
 				<!-- <a href="#0">Read more</a> -->
-				<span class="cd-date">11:30PM-12:30AM</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>The Open Connect Appliance (OCA)</h2>
-				<p>The physical content server that was installed by Netflix at your local ISP's data center. It contains multiple hard drives which together hold between 100 and 200TB of Netflix content. This is the literal machine that is serving your video stream to you in real-time. Every day, it also downloads ~7.5Tb of new video data from Netflix during off-peak hours. Your ISP agrees to pay for the electricity it uses because it spares them of the Netflix thru-traffic they would be handling otherwise.</p>
-				<img src="img/oca.jpg" alt="Picture">
-
-				<!-- <a href="#0">Read more</a> -->
-				<span class="cd-date">2AM-12:00PM, 11:30PM-12:30AM</span>
+				<span class="cd-date">11:30PM-12:30AM (now)</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
+				<img src="img/cd-icon-location.svg" alt="Picture">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Your Internet Service Provider (ISP)</h2>
-				<p>The company to whom you pay a monthly bill, and who operates and maintains the network in your local area. Netflix has partnered with your ISP by installing OCAs in their regional data centers. One OCA somewhere in your ISP's network received the video you've chosen to stream within a content shipment from Netflix's Transcoding Repository. This OCA then replicated the files in this shipment onto every other OCA in your ISP's network, including the one streaming video to your device.</p>
-				<img src="img/isp.jpg" alt="Picture">
-				<span class="cd-date">Feb 26</span>
+				<h2>The Open Connect Appliance (OCA)</h2>
+				<p>The physical content server that was installed by Netflix at your local ISP's data center. It contains multiple hard drives which together hold between 100 and 200TB of Netflix content. This is the literal machine that is serving your video stream to you in real-time. Netflix gave this box to your ISP for free, and your ISP agrees to pay for the electricity this server uses because it spares them of the costly Netflix thru-traffic they would be handling otherwise. Every day, this server downloads ~7.5Tb of new video data from Netflix during off-peak hours, which are typically 2:00AM to noon, your local time. Your episode, as well as the rest of the season, came in on this shipment. Actual OCA hardware depicted below.</p>
+				<img src="img/oca.jpg" alt="Picture">
+
+				<!-- <a href="#0">Read more</a> -->
+				<span class="cd-date">2AM-12:00PM (earlier today), 11:30PM - 12:30AM (now)</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-location.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Your Internet Service Provider (ISP)</h2>
+				<p>The company to whom you pay a monthly bill, and who operates and maintains the network infrastructure in your local area. Netflix has partnered with your ISP by installing OCAs in their regional data centers or internet interconnection facilities. One OCA somewhere in your ISP's network received the episode you've chosen to stream within a content shipment from Netflix's Transcoding Repository. This OCA then replicated the files in this shipment onto every other OCA in your ISP's network, including the one streaming video to your device.</p>
+				<img src="img/isp.jpg" alt="Picture">
+				<span class="cd-date">2:00AM - 12:00PM (earlier today), 11:30PM - 12:30AM (now)</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
 				<img src="img/cd-icon-location.svg" alt="Location">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>The Internet Backbone</h2>
-				<p>The vast network of fiber and coaxial cabling that connects ISPs together. Your stream is not currently migrating across these cables. However, the source data for your stream was shipped across these cables to an OCA in your ISP's network during an off-peak time to avoid competing with other backbone traffic (generally 2AM to noon, your local time).</p>
+				<p>The vast network of fiber and coaxial cabling that connects ISPs together. Your stream is not currently migrating across these cables. If it were, your stream would probably have some buffering issues. However, the raw data for your stream was pumped through these cables to a receiver OCA in your ISP's network during an off-peak time to avoid competing with other backbone traffic.</p>
 				<img src="img/backbone.gif" alt="Picture">
 
 				<!-- <a href="#0">Read more</a> -->
-				<span class="cd-date">2:00AM - 12:00PM (earlier in the day)</span>
+				<span class="cd-date">2:00AM - 12:00PM (earlier today)</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
+			<div class="cd-timeline-img cd-movie">
 				<img src="img/cd-icon-location.svg" alt="Location">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>The Netflix Transcoding Repository</h2>
-				<p>A centralized Netflix operations center somewhere in North America. Here, all of Netflix's content is encoded as video files and routed to certain global regions before being deployed across Internet backbone links. This is the origin of all physical video files before they are pre-positioned around the world.</p>
+				<p>A centralized Netflix operations center somewhere in North America, likely in California. Here, all of Netflix's content is encoded as video files and routed towards certain global regions before being deployed across Internet backbone links. This is the origin of all physical video files, including tonight's episode, before they are forward-positioned around the world by Open Connect. Image taken from Netflix's Open Connect press release.</p>
 				<img src="img/transcode.png" alt="Picture">
 
 				<!-- <a href="#0">Read more</a> -->
-				<span class="cd-date">2AM-12:00PM</span>
+				<span class="cd-date">yesterday, approximately</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 		<div class="cd-container ender">
 			<div class="description">
 				<h1>Putting the model into practice</h1>
-				<p>On May 7th at 11:30PM I engaged with this model by streaming an hour of Netflix from my bedroom in New York City. I ran a packet tracing program as I streamed, monitoring the data coming onto my Macbook Pro's WiFi interface using Wireshark.</p>
+				<p>On May 7th at 11:30PM I engaged with this conceptual model by streaming an hour of Netflix from my bedroom in New York City. As I streamed, I ran the packet tracing program Wireshark to monitor the data coming onto my Macbook Pro's WiFi interface.</p>
 				<div class="spacer"></div>
 				<img src="img/trace.png">
 				<div class="spacer"></div>
@@ -119,7 +120,7 @@
 				<img class="ender-img" src="img/amazon.png" style="width: 400px">
 				<div class="spacer"></div>
 				<p>This address was in a Virginia data center, owned by Amazon. This is what I expected to find, as I learned in my research for this project that Netflix hosts all of their backend operations on Amazon's public cloud, i.e. everything that happens up until the user hits play. This is the machine where my recommendations were being calculated and served from.</p>
-				I eventually settled on an episode, a relatively new Netflix original titled <span class="italic">Old Baby</span> which appeared under the homepage's "Trending" section. As the stream began, the output on my wireless trace immediately filled with packets from a new address, 23.246.7.157.</p>
+				I eventually settled on an episode, a relatively new Netflix original titled <span class="italic">Old Baby</span> which appeared under the homepage's "Trending" section. As the stream began, the output on my wireless trace immediately filled with packets from a new address, 23.246.7.157. I also saw packets coming from this same subnet (23.246.7.XXX) as I scrolled past video previews embedded on the homepage.</p>
 				<div class="spacer"></div>
 				<img class="ender-img" src="img/oca.png">
 				<div class="spacer"></div>
@@ -127,9 +128,13 @@
 				The Wilmington OCA's speed improvement is rather insignificant or inconsequential from my individual perspective, but the fact that it comes as a billion-dollar investment shines light on the sheer scale that Netflix engineers are considering.
 				</br>
 			</div>
+			<div class="footnote">
+			by <a href="https://tgoodwin.github.io">Tim Goodwin</a>, 2017.
+			</div>
 		</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
+
 </html>

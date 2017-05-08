@@ -3,6 +3,8 @@
 Primary style
 
 -------------------------------- */
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');*/
+
 
 html * {
   -webkit-font-smoothing: antialiased;
@@ -17,7 +19,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", monospace;
   color: #7f8c97;
   background-color: #fefefe;
 }
@@ -84,6 +86,11 @@ Modules - reusable parts of our design
   margin-top: 5em;
   position: absolute;
 }
+.footnote {
+  color: #444;
+  text-align: center;
+  margin: 1em;
+}
 
 .ender-img {
   margin: auto;
@@ -106,6 +113,7 @@ header {
   text-align: center;
   /*background: #ffeeee;*/
 }
+
 header h1 {
   color: #223322;
   font-size: 48px;
